@@ -1,0 +1,23 @@
+/*-----------------------------------------------------------------*/
+/*   Mixins  */
+/*-----------------------------------------------------------------*/
+
+//Fonts
+@mixin Montserrat-font() {
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap');
+}
+
+$mobile-width: 420px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

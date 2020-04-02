@@ -1,0 +1,46 @@
+.footer {
+  height: 50px;
+  background-color: $light-blue-primary;
+  // background-color: $new-blue-primary;
+  padding: 0 20px;
+
+  @include desktop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 60px;
+    padding: 0 40px;
+  }
+
+  &__social {
+    align-self: center;
+
+    a {
+      margin: 0 10px;
+
+      img {
+        height: 30px;
+        width: auto;
+
+        @include desktop {
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  &__image {
+    align-self: center;
+
+    a {
+      img {
+        height: 30px;
+        width: auto;
+
+        @include desktop {
+          height: 40px;
+        }
+      }
+    }
+  }
+}
