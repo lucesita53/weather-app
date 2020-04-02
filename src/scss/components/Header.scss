@@ -1,0 +1,50 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.31);
+  height: 60px;
+  margin-bottom: 4px !important;
+  background-color: $light-blue-primary;
+
+  @include desktop {
+    height: 80px;
+  }
+
+  &__title {
+    align-self: center;
+
+    span {
+      color: $white;
+      font-family: $Montserrat;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 24px;
+      letter-spacing: 0.5px;
+      line-height: 24px;
+      font-weight: 600;
+      margin: 0 !important;
+      height: 30px !important;
+      text-transform: uppercase;
+
+      @include desktop {
+        font-size: 28px;
+        letter-spacing: 0.7px;
+        line-height: 28px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__burger-menu {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+
+    @include desktop {
+      cursor: pointer;
+      right: 25px;
+      top: 25px;
+    }
+  }
+}
