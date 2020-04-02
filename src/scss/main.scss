@@ -1,0 +1,14 @@
+//Others...
+@import './mixins';
+@import './normalize';
+@import './variables';
+
+// Components...
+@import './components/Header.scss';
+@import './components/Footer.scss';
+@import './components/SideMenu.scss';
+
+// Containers...
+@import './containers/GeneralContainer.scss';
+
+@include Montserrat-font();
